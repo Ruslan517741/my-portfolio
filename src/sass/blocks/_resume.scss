@@ -59,20 +59,22 @@
         &-body {
             padding-left: 43px;
             margin-top: 12px;
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 17px;
+            line-height: 19px;
             li {
                 list-style-position: inside;
                 font-size: 13px;
                 line-height: 18px; 
-            }
-            button {
-                border-radius: 5px;
-                border: solid 0.5px;
-                background-color: $main-color;
-                font-size: 10px;
-                line-height: 15px; 
-            }
+            }  
+        }
+        &-certificate {
+            text-decoration: none;
+            color:#000;
+            border-radius: 5px;
+            border: solid 0.5px;
+            background-color: $main-color;
+            font-size: 10px;
+            line-height: 15px; 
         }
         &-icon {
             position: absolute;
