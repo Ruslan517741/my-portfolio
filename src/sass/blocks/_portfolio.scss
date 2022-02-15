@@ -5,10 +5,12 @@
         display: grid;
         grid-template: repeat(2, 420px) / repeat(2, 560px);
         grid-auto-rows: 420px;
-        gap: 5px;
+        gap: 20px;
+        
     }
     &__item {
         position: relative;
+        border: solid 2px #535353;
         img {
             transition: all 0.9s;
             width: 100%;
@@ -21,7 +23,7 @@
         &-info {
             display: none;
             position: absolute;
-            width: 560px;
+            width: 556px;
             height: 100px;
             bottom: 0px;
             left: 0px;
@@ -29,10 +31,40 @@
             animation: fadeIn;
             animation-duration: 1.5s;
             z-index: 10;
+            flex-direction: column;
+            justify-content: space-around;
+            a {
+                font-size: 20px;
+                padding-left: 25px;
+                color: #000000
+            }
         }
+        &:hover {
+            box-shadow: 0px 0px 10px 5px #7c7c7c;
+        }
+        &-wrapper {
+            position: absolute;
+            top: 5px;
+            left: 320px;
+            
+        }
+        &-text {
+            font-size: 18px;
+        }
+        &-tools {
+            display: block;
+            width: 200px;
+            height: 65px;
+            background-color: rgba(255, 255, 255, 0.644);
+            box-shadow: inset 0px 0px 5px 3px #c4c4c4;
+            padding: 10px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+
     }
 }
 
 .show {
-    display: block;
+    display: flex;
 }
