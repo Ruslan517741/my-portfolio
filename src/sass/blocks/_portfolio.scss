@@ -16,14 +16,11 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            &:hover {
-                filter: brightness(0.4) sepia(60%) hue-rotate(180deg);
-            }
         }
         &-info {
             display: none;
             position: absolute;
-            width: 556px;
+            width: 100%;
             height: 100px;
             bottom: 0px;
             left: 0px;
