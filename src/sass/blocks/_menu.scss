@@ -7,6 +7,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    box-shadow: -2px -2px 15px 15px #ffffffd4;;
+    background: #ffffffd4;
     cursor: pointer;
     span {
         display: block;
@@ -87,10 +89,14 @@
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
-        width: 90px;
+        width: 110px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &-link {
+            width: 20px;
+            height: 20px;
+        }
     }
     &__overlay {
         position: fixed;

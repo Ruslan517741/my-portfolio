@@ -1,17 +1,20 @@
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
-      closeElem = document.querySelector('.menu__close'),
+      closeElems = document.querySelectorAll('.close'),
       workItems = document.querySelectorAll('.portfolio__item'),
-      workItemsInfo = document.querySelectorAll('.portfolio__item-info');;
+      workItemsInfo = document.querySelectorAll('.portfolio__item-info');
         
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
 });
 
-closeElem.addEventListener('click', () => {
-    menu.classList.remove('active');
+closeElems.forEach(elem => {
+    elem.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
 });
+
 
 const percents = document.querySelectorAll('.skills__progress-percent'),
     lines = document.querySelectorAll('.skills__progress-line');

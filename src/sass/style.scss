@@ -22,16 +22,6 @@
     background-color: $main-color;
     margin: 25px auto 25px auto;
 }
-.policy {
-    padding: 15px 25px;
-    /* h4 {
-        margin-top: 20px;
-    } */
-    span {
-        display: block;
-        margin-left: 15px;
-    }
-}
 
 @import 'blocks/promo';
 @import 'blocks/title';
@@ -41,5 +31,6 @@
 @import 'blocks/resume';
 @import 'blocks/skills';
 @import 'blocks/portfolio';
+@import 'blocks/footer';
 @import 'blocks/pageup';
 @import 'blocks/media';
