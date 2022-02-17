@@ -278,3 +278,65 @@
         right: 8px;
     }
 }
+
+@media (max-width: 393px) {
+    .title_fz16 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .promo {
+        &__title {
+            width: 300px;
+        }
+        &__subtitle {
+            &::before {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+    .resume {
+        padding-top: 10px;
+        &__wrapper {
+            padding: 10px 0px 0 0px;
+            grid-template-columns: 308px;
+            row-gap: 25px;        
+        }
+    }
+    .portfolio {
+        padding: 30px 0;
+        &__wrapper {
+            margin-top: 25px;
+            grid-template: 210px / 315px;
+            grid-auto-rows: 210px;
+        }
+        &__item {
+            &-info {
+                height: 60px;
+                flex-direction: row;
+                justify-content: space-between;
+                a {
+                    font-size: 10px;
+                    line-height: 20px;
+                    padding: 5px 10px;
+                }
+            }
+            &-wrapper {
+                display: flex;
+                left: 10px;
+                top: 35px;
+            }
+            &-text {
+                font-size: 12px;
+                margin-right: 50px;
+            }
+            &-tools {
+                width: 120px;
+                height: 20px;
+                padding: 5px;
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+    }
+}
