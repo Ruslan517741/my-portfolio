@@ -2,7 +2,8 @@ const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
       closeElems = document.querySelectorAll('.close'),
       workItems = document.querySelectorAll('.portfolio__item'),
-      workItemsInfo = document.querySelectorAll('.portfolio__item-info');
+      workItemsInfo = document.querySelectorAll('.portfolio__item-info'),
+      filteredImage = document.querySelectorAll('.portfolio__item img');
         
 
 hamburger.addEventListener('click', () => {
@@ -26,11 +27,11 @@ percents.forEach( (item,i) => {
 workItems.forEach((item, i) => {
     item.addEventListener("mouseover", () => {
         workItemsInfo[i].classList.add('show');
-        /* workItemsInfo[i].classList.remove('hide'); */
+        filteredImage[i].classList.add('filtered');
     });
     item.addEventListener("mouseout", () => {
-        /* workItemsInfo[i].classList.add('hide'); */
         workItemsInfo[i].classList.remove('show');
+        filteredImage[i].classList.remove('filtered');
     });
 });
 
