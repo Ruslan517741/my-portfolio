@@ -342,7 +342,15 @@
     .footer {
         &__download-resume {
             font-size: 13px;   
-            text-align: center;        
+            text-align: center;    
+            padding: 5px;    
         }
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        height: 130px;
+        flex-wrap: wrap;
     }
 }

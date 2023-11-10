@@ -3,7 +3,8 @@ const hamburger = document.querySelector('.hamburger'),
       closeElems = document.querySelectorAll('.close'),
       workItems = document.querySelectorAll('.portfolio__item'),
       workItemsInfo = document.querySelectorAll('.portfolio__item-info'),
-      filteredImage = document.querySelectorAll('.portfolio__item img');
+      filteredImage = document.querySelectorAll('.portfolio__item img'),
+      arrowUp = document.querySelector("#up");
         
 
 hamburger.addEventListener('click', () => {
@@ -35,16 +36,17 @@ workItems.forEach((item, i) => {
     });
 });
 
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 1600) {
-        $('.pageup').fadeIn();
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 1000) {
+        arrowUp.style.display = 'block';
     } else {
-        $('.pageup').fadeOut();
-    } 
+        arrowUp.style.display = 'none';
+    }
 });
 
-$("a[href=#up]").click(function(){
-    const _href = $(this).attr("href");
-    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-    return false;
-});
+arrowUp.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+})
